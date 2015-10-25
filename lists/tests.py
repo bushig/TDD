@@ -5,4 +5,4 @@ from lists.views import home_page
 class HomePageTests(TestCase):
     def test_main_page_url(self):
         found=resolve('/')
-        self.assertEqual(found,home_page)
+        self.assertEqual(found.func,home_page)
